@@ -28,15 +28,34 @@ a:active,
 a.active {
   color: #000000;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
 }
 
 .img-centered {
@@ -66,17 +85,17 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
-    max-width: 500px;
+  max-width: 500px;
 }
 
 
 .header_text {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 26px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.01em;
 
 
@@ -90,13 +109,13 @@ header .intro-text .name {
   header .intro-text .name {
     font-size: 48px;
     font-weight: 100;
-      max-width: 500px;
+    max-width: 500px;
   }
   header .intro-text .Meta_text {
     font-size: 26px;
     font-weight: 100;
     letter-spacing: 0.05em;
-      max-width: 500px;
+    max-width: 500px;
 
   }
 
@@ -109,10 +128,13 @@ header .intro-text .name {
 }
 
 .navbar-custom {
-  background: rgba(49, 170, 222, 1);
+  background: #31aade;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   border: none;
+  -webkit-box-shadow: 0px 9px 68px -16px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 9px 68px -16px rgba(0,0,0,0.3);
+  box-shadow: 0px 9px 68px -16px rgba(0,0,0,0.3);
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -145,6 +167,7 @@ header .intro-text .name {
 .navbar-custom .navbar-nav li.active a:active {
   color: #000000;
   background: #31aade;
+
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -196,12 +219,6 @@ section.success {
   }
 }
 
-.Navbar_dropdown {
-  z-index: 100;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
 
 
 .aboutText {
@@ -359,17 +376,36 @@ fieldset[disabled] .btn-success.active {
   outline: none;
 }
 
+#buttons{
+  text-align: center;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-display-right {
+  background-color: white;
+  border: none;
+
+
+}
+
+.button-display-left {
+  background-color: white;
+  border: none;
+
+}
+
 .project-item {
-    padding: 10px;
+  padding: 10px;
 }
 
 .project-logo {
-height: 50px;
+  height: 50px;
 }
 
 .project-logo img{
   margin-top: 20px;
   display: block;
- margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
