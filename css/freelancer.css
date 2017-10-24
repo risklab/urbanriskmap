@@ -129,7 +129,7 @@ header .intro-text .name {
     position: fixed;
     right: 100px;
     top: 75px;
-    display: none;
+    display: inline;
     position: absolute;
     background-color: #31aade;
     min-width: 160px;
