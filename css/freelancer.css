@@ -249,7 +249,10 @@ section.success {
   margin-left: auto;
   margin-right: auto;
 }
-
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
 .aboutText {
   margin-left: auto;
   margin-right: auto;
