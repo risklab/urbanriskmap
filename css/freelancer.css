@@ -98,6 +98,7 @@ header .intro-text .name {
   font-weight: 100;
   letter-spacing: 0.01em;
   max-width: 600px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 
@@ -155,7 +156,7 @@ header .intro-text .name {
   color: #000000;
 }
 .navbar-custom .navbar-nav li a:focus,
-.navbar-custom .navbar-nav li a:active {
+.navbar-custom .navbar-nav li a:active a:visited{
   color: white;
 }
 .navbar-custom .navbar-nav li.active a {
@@ -167,7 +168,6 @@ header .intro-text .name {
 .navbar-custom .navbar-nav li.active a:active {
   color: #000000;
   background: #31aade;
-
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -185,7 +185,7 @@ header .intro-text .name {
 @@media (max-width: 768px) {
   #video {
     width: 320;
-   height: 180;
+    height: 180;
   }
 }
 @media (min-width: 768px) {
@@ -209,7 +209,7 @@ header .intro-text .name {
   }
   #video {
     width: 640px;
-   height: 360px;
+    height: 360px;
   }
 }
 section {
@@ -229,10 +229,26 @@ section.success {
   }
 }
 
+#slideshow-projects {
+  max-width: 800px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.slideshow {
+  /*width: 70%;*/
+  max-width: 800px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .aboutText {
-  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  max-width: 600px;
 }
 
 .btn-outline {
@@ -385,6 +401,10 @@ fieldset[disabled] .btn-success.active {
 #maincontent {
   outline: none;
 }
+#mainNav{
+  height: 80px;
+  opacity: .8;
+}
 
 #buttons{
   text-align: center;
@@ -397,6 +417,10 @@ fieldset[disabled] .btn-success.active {
   border: none;
 
 
+}
+.star-primary{
+  width: 80%;
+  max-width: 600px;
 }
 
 .button-display-left {
@@ -418,4 +442,8 @@ fieldset[disabled] .btn-success.active {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.support {
+  padding-top: 50px;
 }
