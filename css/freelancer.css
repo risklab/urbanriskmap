@@ -239,6 +239,9 @@ section.success {
 .slidehide{
   display: none;
 }
+.mySlides{
+  cursor: pointer;
+}
 .slideshow {
   /*width: 70%;*/
   max-width: 800px;
