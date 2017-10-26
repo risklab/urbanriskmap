@@ -236,6 +236,9 @@ section.success {
   margin-right: auto;
 }
 
+.slidehide{
+  display: none;
+}
 .slideshow {
   /*width: 70%;*/
   max-width: 800px;

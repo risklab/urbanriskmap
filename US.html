@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,500,700" rel="stylesheet">
 <!-- slideshow -->
-<!-- <script type="text/javascript" src="js/slideshow.js"></script> -->
+<script type="text/javascript" src="js/slideshow.js"></script>
 
 </head>
 <body id="page-top" class="index">
@@ -58,30 +58,17 @@
   <body id="page-top" class="index">
     <div id="slideshow-projects" class="w3-content w3-display-container" style="padding=10px;">
       <img class="mySlides" src="img/slideshow/01_Process_Diagram.jpg" style="width:100%">
-      <img class="mySlides" src="img/slideshow/02_bots.jpg" style="width:100%">
-      <img class="mySlides" src="img/slideshow/03_cards.jpg" style="width:100%">
-      <img class="mySlides" src="img/slideshow/05_hand_image.png" style="width:100%">
-      <img class="mySlides" src="img/slideshow/07_Capture15.JPG" style="width:100%">
-      <img class="mySlides" src="img/slideshow/06_Capture16.JPG" style="width:100%">
-      <img class="mySlides" src="img/slideshow/08_ControlRoom.jpg" style="width:100%">
+      <img class="mySlides slidehide" src="img/slideshow/02_bots.jpg" style="width:100%">
+      <img class="mySlides slidehide" src="img/slideshow/03_cards.jpg" style="width:100%">
+      <img class="mySlides slidehide" src="img/slideshow/05_hand_image.png" style="width:100%">
+      <img class="mySlides slidehide" src="img/slideshow/07_Capture15.JPG" style="width:100%">
+      <img class="mySlides slidehide" src="img/slideshow/06_Capture16.JPG" style="width:100%">
+      <img class="mySlides slidehide" src="img/slideshow/08_ControlRoom.jpg" style="width:100%">
       <div id="buttons">
         <button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="button-display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
     </div>
-    <script>
-    function showDivs(e) {
-      var s, l = document.getElementsByClassName("mySlides");
-      for (console.log(l.length), s = 0; s < l.length; s++) l[s].style.display = "none", e > l.length && (slideIndex = 1), e < 1 && (slideIndex = l.length);
-      l[slideIndex - 1].style.display = "block"
-    }
-
-    function plusDivs(e) {
-      showDivs(slideIndex += e)
-    }
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    </script>
 
     <!-- project Grid Section -->
     <section id="project">
