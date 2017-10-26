@@ -14,21 +14,14 @@
   <!-- Bootstrap Core CSS and JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
   <!-- Theme CSS -->
   <link href="css/freelancer.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,500,700" rel="stylesheet">
-
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+  <!-- slideshow -->
+  <script type="text/javascript" src="js/slideshow.js"></script>
 
 </head>
 
@@ -43,7 +36,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="#page-top">Urban Risk Map</a>
+        <a class="navbar-brand" href="#page-top"><b>RISK</b>map</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,29 +61,14 @@
     <!-- /.container-fluid -->
   </nav>
 
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-right">
-      <li class="page-scroll">
-        <a href="#Indonesia">Indonesia</a>
-      </li>
-      <li class="page-scroll">
-        <a href="#India">India</a>
-      </li>
-      <li class="page-scroll">
-        <a href="#US">US</a>
-      </li>
-    </ul>
-  </div>
-
-
   <!-- Header -->
   <header>
     <div class="container" id="maincontent" tabindex="-1">
       <div class="row">
         <div class="col-lg-12">
+            <div id="URL_logo"><a href="http://urbanrisklab.org"><img src="img/URL_logo.png"></a></div><br>
           <div class="intro-text">
             <span class="header_text">Urban Risk Map is an open source initiative to crowdsource disaster information in realtime </span>
-            <div id="URL_logo"><a href="http://urbanrisklab.org"><img src="img/URL_logo.png"></a></div>
           </div>
         </div>
       </div>
@@ -123,32 +101,19 @@
             the process of data collection as cities can have a set of pre-designed cards for specific disaster type that can be quickly turned on and made available.</p>
         </div>
 
-        <div class="w3-content w3-display-container" style="padding=10px;">
-          <img class="mySlides" src="img/slideshow/01_Process_Diagram.jpg" style="width:100%">
-          <img class="mySlides" src="img/slideshow/02_bots.jpg" style="width:100%">
-          <img class="mySlides" src="img/slideshow/03_cards.jpg" style="width:100%">
-          <img class="mySlides" src="img/slideshow/05_hand_image.png" style="width:100%">
-          <img class="mySlides" src="img/slideshow/07_Capture15.JPG" style="width:100%">
-          <img class="mySlides" src="img/slideshow/06_Capture16.JPG" style="width:100%">
-          <img class="mySlides" src="img/slideshow/08_ControlRoom.jpg" style="width:100%">
+        <div id="slideshow-projects" class="w3-content w3-display-container">
+          <img class="mySlides" src="img/slideshow/01_Process_Diagram.jpg" style="width:100%" onclick="plusDivs(1)">
+          <img class="mySlides slidehide" src="img/slideshow/02_bots.jpg" style="width:100%" onclick="plusDivs(1)">
+          <img class="mySlides slidehide" src="img/slideshow/03_cards.jpg" style="width:100%" onclick="plusDivs(1)">
+          <img class="mySlides slidehide" src="img/slideshow/05_hand_image.png" style="width:100%" onclick="plusDivs(1)">
+          <img class="mySlides slidehide" src="img/slideshow/07_Capture15.JPG" style="width:100%" onclick="plusDivs(1)">
+          <img class="mySlides slidehide" src="img/slideshow/06_Capture16.JPG" style="width:100%" onclick="plusDivs(1)">
+          <img class="mySlides slidehide" src="img/slideshow/08_ControlRoom.jpg" style="width:100%" onclick="plusDivs(1)">
           <div id="buttons">
             <button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="button-display-right" onclick="plusDivs(1)">&#10095;</button>
           </div>
         </div>
-        <script>
-          function showDivs(e) {
-            var s, l = document.getElementsByClassName("mySlides");
-            for (console.log(l.length), s = 0; s < l.length; s++) l[s].style.display = "none", e > l.length && (slideIndex = 1), e < 1 && (slideIndex = l.length);
-            l[slideIndex - 1].style.display = "block"
-          }
-
-          function plusDivs(e) {
-            showDivs(slideIndex += e)
-          }
-          var slideIndex = 1;
-          showDivs(slideIndex);
-        </script>
       </div>
     </div>
   </section>
@@ -160,13 +125,14 @@
         <div class="col-lg-12 text-center">
           <h4>project Locations</h4>
         </div>
+        <hr class="star-primary">
       </div>
 
       <div class="row ">
         <!-- Indonesia-->
         <div class="col-sm-12 project-item" id="Indonesia">
           <center> <br>
-            <H5>Indonesia</H5>
+          <a href="https://PetaBencana.id"><H5>Indonesia</H5></a>
           </center>
           <br>
           <div class="col-sm-4 project-logo">
@@ -182,11 +148,11 @@
         <!-- India-->
         <div class="col-sm-12 project-item" id="India">
           <center> <br>
-            <H5>India</H5>
+          <a href="http://riskmap.in"><H5>India</H5></a>
             <br>
           </center>
           <div class="col-sm-4 project-logo">
-            <a href="http://riskmap.in"><img src="img/project/Riskmap_logo.svg" style="height:50px;"></a>
+            <a href="http://riskmap.in">img src="img/project/Riskmap_logo.svg" style="height:50px;"></a>
           </div>
           <br>
           <div class="col-sm-8 project-item">
@@ -198,7 +164,7 @@
         <!-- US-->
         <div class="col-sm-12 project-item" id="US">
           <center> <br>
-            <H5>United States</H5>
+          <a href="https://riskmap.us"><H5>United States</H5></a>
             <br>
           </center>
           <div class="col-sm-4 project-logo">
