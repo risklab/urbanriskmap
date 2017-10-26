@@ -20,6 +20,8 @@
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,500,700" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400" rel="stylesheet">
   <!-- slideshow -->
   <script type="text/javascript" src="js/slideshow.js"></script>
 
@@ -45,11 +47,18 @@
           <li class="hidden">
             <a href="#page-top"></a>
           </li>
+
           <li class="page-scroll">
-            <a href="#about">About</a>
+            <a href="India.html">India </a><br>
           </li>
           <li class="page-scroll">
-            <a href="#project">Project Locations</a>
+            <a href="Indo.html">Indonasia </a><br>
+          </li>
+          <li class="page-scroll">
+            <a href="US.html">United Statess</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#about">About</a>
           </li>
           <li class="page-scroll">
             <a href="#contact">Contact</a>
@@ -68,6 +77,7 @@
         <div class="col-lg-12">
             <div id="URL_logo"><a href="http://urbanrisklab.org"><img src="img/URL_logo.png"></a></div><br>
           <div class="intro-text">
+            <div id="URL_logo"><a href="http://urbanrisklab.org"><img src="img/URL_logo.png"></a></div><br>
             <span class="header_text">Urban Risk Map is an open source initiative to crowdsource disaster information in realtime </span>
           </div>
         </div>
@@ -210,67 +220,93 @@
               } else {
                 iframe = document.getElementById("JotFormIFrame");
               }
-              if (!iframe) return;
-              switch (args[0]) {
-                case "scrollIntoView":
+              window.handleIFrameMessage = function(e) {
+                var args = e.data.split(":");
+                if (args.length > 2) {
+                  iframe = document.getElementById("JotFormIFrame-" + args[2]);
+                } else {
+                  iframe = document.getElementById("JotFormIFrame");
+                }
+                if (!iframe) return;
+                switch (args[0]) {
+                  case "scrollIntoView":
                   iframe.scrollIntoView();
                   break;
-                case "setHeight":
+                  case "setHeight":
                   iframe.style.height = args[1] + "px";
                   break;
-                case "collapseErrorPage":
+                  case "collapseErrorPage":
                   if (iframe.clientHeight > window.innerHeight) {
                     iframe.style.height = window.innerHeight + "px";
                   }
                   break;
-                case "reloadPage":
+                  case "reloadPage":
                   window.location.reload();
                   break;
+                }
+                var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+                if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+                  var urls = {
+                    "docurl": encodeURIComponent(document.URL),
+                    "referrer": encodeURIComponent(document.referrer)
+                  };
+                  iframe.contentWindow.postMessage(JSON.stringify({
+                    "type": "urls",
+                    "value": urls
+                  }), "*");
+                }
+              };
+              if (window.addEventListener) {
+                window.addEventListener("message", handleIFrameMessage, false);
+              } else if (window.attachEvent) {
+                window.attachEvent("onmessage", handleIFrameMessage);
               }
-              var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-              if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-                var urls = {
-                  "docurl": encodeURIComponent(document.URL),
-                  "referrer": encodeURIComponent(document.referrer)
-                };
-                iframe.contentWindow.postMessage(JSON.stringify({
-                  "type": "urls",
-                  "value": urls
-                }), "*");
-              }
-            };
-            if (window.addEventListener) {
-              window.addEventListener("message", handleIFrameMessage, false);
-            } else if (window.attachEvent) {
-              window.attachEvent("onmessage", handleIFrameMessage);
-            }
-          </script>
+              </script>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section id="team">
+        <div class="container">
+          <center><H5>Team</H5></center>
+          <hr class="star-primary">
+          <div class="col-sm-12">
+            <p style="text-align:center;">Miho Mazereeuw, Tomas Holderness, Etienne Turpin, Aditya Barve, Maanasa Sridhar, Mayank Ojha, Abraham Quintero, Christina Geros, Nashin Mahtani, Mahardika Fadmastuti, Pritta Andrani, Matthew Berryman, Mark Varley</p>
+          </div>
+
+          <div class="col-sm-12 support">
+            <h6 style="text-align:center;">Supported by</h6>
+            <hr class="star-primary">
+            <p style="text-align:center;">USAID</p>
+            <p style="text-align:center;">MIT TATA center of Technology and Design</p>
+            <p style="text-align:center;">Passific Disaster Center</p>
+            <p style="text-align:center;">Broward County</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+      <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+          <i class="fa fa-chevron-up"></i>
+        </a>
       </div>
-    </div>
-  </section>
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-  </div>
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
 
-  <!-- Theme JavaScript -->
-  <script src="js/freelancer.min.js"></script>
-  <!-- JQUERRY CDN-->
+      <!-- Theme JavaScript -->
+      <script src="js/freelancer.min.js"></script>
+      <!-- JQUERRY CDN-->
 
-</body>
+    </body>
 
-</html>
+    </html>
