@@ -462,6 +462,21 @@ fieldset[disabled] .btn-success.active {
   font-style: italic;
 }
 
+.media-icon {
+  padding: 5px;
+  -webkit-filter: grayscale(1);
+}
+
+.media-icon:hover {
+      -webkit-filter: none;
+}
+.media-image {
+  height: 55px;
+  display:block;
+  margin: auto;
+  padding: 10px;
+}
+
 .support-icon {
   padding: 5px;
   -webkit-filter: grayscale(1);

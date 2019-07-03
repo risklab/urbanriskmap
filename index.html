@@ -23,17 +23,20 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77075547-6"></script>
   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-     gtag('config', 'UA-77075547-6');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77075547-6');
   </script>
 
 
 </head>
 
-  <body id="page-top" class="index">
+<body id="page-top" class="index">
   <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
   <!-- Navigation -->
@@ -79,7 +82,7 @@
         <div class="col-lg-12">
           <div class="intro-text">
             <br>
-            <span class="header_text">Urban Risk Map is a real-time platform for sharing critical information between residents and government.</span>
+            <span class="header_text"> RiskMap is a real-time platform for sharing critical information between residents and government.</span>
             <div id="URL_logo"><a href="http://urbanrisklab.org"><img src="img/URL_logo.png"></a></div>
           </div>
         </div>
@@ -99,16 +102,22 @@
       <div class="row">
         <div>
           <center>
-            <iframe src="https://www.youtube.com/embed/we8zoyJtSUs" id="video" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
+            <iframe src="https://www.youtube.com/embed/we8zoyJtSUs" id="video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
 
 
         <div class="aboutText">
-          <p>Urban Risk Map harnesses the power of citizen reporting and social media to map time-critical information without needing to install any new applications or training. Currently operating in three countries - Indonesia, India and the United States - this platform connects residents, who often have the best-localized information, with emergency managers to drastically cut down on response times.  Through the live map, residents are also able to inform each other about dynamically changing situations in the city and help each other navigate to safety. The platform currently works with Twitter, Facebook, and Telegram and also visualizes real-time sensor information, such as changing water levels in flood gauges, monitoring wells and pumping stations.
+          <p> RiskMap harnesses the power of citizen reporting and social media to map time-critical information without needing to install any new applications or training. Currently operating in three countries - Indonesia, India and the United
+            States - this platform connects residents, who often have the best-localized information, with emergency managers to drastically cut down on response times.  Through the live map, residents are also able to inform each other about
+            dynamically changing situations in the city and help each other navigate to safety. The platform currently works with Twitter, Facebook, and Telegram and also visualizes real-time sensor information, such as changing water levels in flood
+            gauges, monitoring wells and pumping stations.
           </p>
-          <p>This platform was widely shared and used during high-intensity rainfall event in Jakarta on February 21, 2017, and over a quarter million residents used the website to navigate the flooded city. The public map was also embedded in the Uber app for drivers to help them travel safely through the city. Similarly, in Chennai during a high-intensity single day rainfall event on November 2, 2017, the Riskmap.in website received 1152 page views a minute at its peak with a total of 111,808 page views in 24 hours. 
+          <p>This platform was widely shared and used during high-intensity rainfall event in Jakarta on February 21, 2017, and over a quarter million residents used the website to navigate the flooded city. The public map was also embedded in the
+            Uber app for drivers to help them travel safely through the city. Similarly, in Chennai during a high-intensity single day rainfall event on November 2, 2017, the Riskmap.in website received 1152 page views a minute at its peak with a
+            total of 111,808 page views in 24 hours. 
           </p>
-          <p>Current research work also focuses on extending the system beyond flooding to include multiple hazards types and developing custom decision support tools for the governments. We are actively working on integrating weather data and leveraging machine learning to automate outreach to inform residents to prepare before the peak of the storm, which enhances the two-way communication capabilities of this platform. 
+          <p>Current research work also focuses on extending the system beyond flooding to include multiple hazards types and developing custom decision support tools for the governments. We are actively working on integrating weather data and
+            leveraging machine learning to automate outreach to inform residents to prepare before the peak of the storm, which enhances the two-way communication capabilities of this platform. 
           </p>
         </div>
 
@@ -145,10 +154,32 @@
       </div>
 
       <div class="row ">
+        <!-- Japan-->
+        <div class="col-sm-12 project-item" id="US">
+          <center> <br>
+            <a href="https://riskmap.us">
+              <H5>Japan</H5>
+            </a>
+            <br>
+          </center>
+          <div class="col-sm-4 project-logo">
+            <a href="https://riskmap.jp"><img src="img/project/RiskmapJapan_logo.svg" style="height:40px;"></a>
+          </div>
+          <br>
+          <div class="col-sm-8">
+            <p style="text-align:left;">Riskmap Japan is supported by LINE Corp and was piloted in Kumamoto, Japan, during the annual disaster drill day. In addition to public reporting Riskmap Japan also features a chatbot based system for shelter management.
+            </p>
+            <hr>
+            <p class="team">Team</p>
+            <p class="team">Miho Mazereeuw, Aditya Barve, Mayank Ojha, Evan Owens, Saeko Baird, Isreal Macias, Christina Liao </p>
+          </div>
+        </div>
         <!-- US-->
         <div class="col-sm-12 project-item" id="US">
           <center> <br>
-            <a href="https://riskmap.us"><H5>United States</H5></a>
+            <a href="https://riskmap.us">
+              <H5>United States</H5>
+            </a>
             <br>
           </center>
           <div class="col-sm-4 project-logo">
@@ -156,36 +187,19 @@
           </div>
           <br>
           <div class="col-sm-8">
-            <p style="text-align:left;">This project, supported by Broward County, had a beta-launch in October to respond to the flooding caused by Hurricane Irma. We will be working with Broward County to fully deploy <a href="https://riskmap.us/">Riskmap.us</a> for future hurricane
-              induced flooding as well as tidal and sunny-day flood occurrences in Broward county, Florida.</p>
+            <p style="text-align:left;">This project, supported by Broward County, had a beta-launch in October to respond to the flooding caused by Hurricane Irma. We will be working with Broward County to fully deploy <a
+                href="https://riskmap.us/">Riskmap.us</a> for future hurricane-induced flooding as well as tidal and sunny-day flood occurrences in Broward County, Florida.</p>
             <hr>
             <p class="team">Team</p>
-            <p class="team">Miho Mazereeuw, Tomas du Chemin Holderness, Mayank Ojha, Aditya Barve, Abraham Quintero, Matthew Berryman </p>
-          </div>
-        </div>
-        <!-- Indonesia-->
-        <div class="col-sm-12 project-item" id="Indonesia">
-          <center> <br>
-            <a href="https://PetaBencana.id"><H5>Indonesia</H5></a>
-          </center>
-          <br>
-          <div class="col-sm-4 project-logo">
-            <a href="https://PetaBencana.id"><img src="img/project/Peta_logo.svg" style="height:50px;"></a>
-          </div>
-          <br>
-          <div class="col-sm-8">
-            <p style="text-align:left;">This project, supported by <a href="https://www.usaid.gov/">USAID</a>, the <a href="https://www.bnpb.go.id/">Indonesia’s National Agency for Disaster Management</a> and in collaboration with the <a href="http://www.pdc.org/">Pacific Disaster Center</a>              at the University of Hawaii, allows residents to share vital flood information using social messaging apps. Confirmed flood reports are added to a publicly available map helping to inform communities and emergency agencies of the flood situation
-              in real-time. Currently operating in four cities, Greater Jakarta, Bandung, Surabaya and Semarang, the flood map feeds the crowdsourced data to emergency managers and PDC’s Disaster Management Early Warning platform called <a href="http://inaware.bnpb.go.id/inaware/">InAWARE</a>              through a custom-built REM (Risk Evaluation Matrix).</p>
-            <hr>
-            <p class="team">Team</p>
-            <p class="team">Miho Mazereeuw, Tomas du Chemin Holderness , Etienne Turpin, Mayank Ojha, Aditya Barve, Pritta Andrani Widyanarko, Dika Fadmastuti, Abraham Quintero, Manaasa Priyaa Dharmapuri Sridhar, Matthew Berryman, Christina Geros, Nashin Mahtani, Emir
-              Hartato</p>
+            <p class="team">Miho Mazereeuw, Tomas Holderness, Mayank Ojha, Aditya Barve, Abraham Quintero, Matthew Berryman </p>
           </div>
         </div>
         <!-- India-->
         <div class="col-sm-12 project-item" id="India">
           <center> <br>
-            <a href="http://riskmap.in"><H5>India</H5></a>
+            <a href="http://riskmap.in">
+              <H5>India</H5>
+            </a>
             <br>
           </center>
           <div class="col-sm-4 project-logo">
@@ -193,16 +207,32 @@
           </div>
           <br>
           <div class="col-sm-8 project-item">
-            <p style="text-align:left;">This project - supported by <a href="https://tatacenter.mit.edu/">TATA Center for Technology and Design at MIT</a> - - is focused on urban hazards vulnerability of Indian cities. Currently operating in the city of Chennai, this platform gathers
-            confirmed flood reports from social media and messaging platforms which are then added to a publicly available map helping
-            inform communities about the flood situation in real-time. This platform is planning to feed the crowd-sourced data to the
-            Emergency Management Department of the Chennai Municipal corporation through a custom-built RED (Risk Evaluation Dashboard).</p>
+            <p style="text-align:left;">This project - supported by <a href="https://tatacenter.mit.edu/">TATA Center for Technology and Design at MIT</a> is focused on urban hazards vulnerability of Indian cities. Currently operating in Chennai, Mumbai, Bangalore in addition to the state of Kerala,  this platform gathers confirmed flood reports from social media and messaging platforms. These reports are then added to a publicly available map helping inform communities about the flood situation in real-time. This platform can also feed this crowd-sourced data to the Emergency Management Departments through a custom-built RED (Risk Evaluation Dashboard).</p>
             <hr>
             <p class="team">Team</p>
-            <p class="team">Miho Mazereeuw, Tomas du Chemin Holderness, Mayank Ojha, Aditya Barve, Abraham Quintero, Manaasa Priyaa Dharmapuri Sridhar, Matthew Berryman</p>
+            <p class="team">Miho Mazereeuw, Tomas Holderness, Mayank Ojha, Aditya Barve, Abraham Quintero, Manaasa Priyaa Dharmapuri Sridhar, Matthew Berryman</p>
           </div>
         </div>
-
+        <!-- Indonesia-->
+        <div class="col-sm-12 project-item" id="Indonesia">
+          <center> <br>
+            <a href="https://PetaBencana.id">
+              <H5>Indonesia</H5>
+            </a>
+          </center>
+          <br>
+          <div class="col-sm-4 project-logo">
+            <a href="https://PetaBencana.id"><img src="img/project/Peta_logo.svg" style="height:50px;"></a>
+          </div>
+          <br>
+          <div class="col-sm-8">
+            <p style="text-align:left;">This project, supported by <a href="https://www.usaid.gov/">USAID</a>, the <a href="https://www.bnpb.go.id/">Indonesia’s National Agency for Disaster Management</a> and in collaboration with the <a href="http://www.pdc.org/">Pacific Disaster Center</a> at the University of Hawaii, allows residents to share vital flood information using social messaging apps. Confirmed flood reports are added to a publicly available map helping communities and emergency agencies to coordinate in real-time. Currently operating in four cities, Greater Jakarta, Bandung, Surabaya and Semarang, the flood map feeds the crowdsourced data to emergency managers and PDC’s Disaster Management Early Warning platform called <a  href="http://inaware.bnpb.go.id/inaware/">InAWARE</a> through a custom-built REM (Risk Evaluation Matrix).</p>
+            <hr>
+            <p class="team">Team</p>
+            <p class="team">Miho Mazereeuw, Tomas Holderness , Etienne Turpin, Matthew Berryman [Across The Cloud], Mayank Ojha, Aditya Barve, Abraham Quintero, Manaasa Priyaa Dharmapuri Sridhar, Christina Geros</p>
+            <p class="team"> Petabencana Field Team:  Pritta Andrani Widyanarko, Dika Fadmastuti, Nashin Mahtani, Emir Hartato </p>
+          </div>
+        </div>
       </div>
   </section>
 
@@ -218,7 +248,8 @@
       </div>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <iframe id="JotFormIFrame-70693731064154" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.us/70693731064154" frameborder="0" style="width: 1px; min-width: 100%; height:539px; border:none;" scrolling="no"> </iframe>
+          <iframe id="JotFormIFrame-70693731064154" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.us/70693731064154" frameborder="0" style="width: 1px; min-width: 100%; height:539px; border:none;"
+            scrolling="no"> </iframe>
           <script type="text/javascript">
             var ifr = document.getElementById("JotFormIFrame-70693731064154");
             if (window.location.href && window.location.href.indexOf("?") > -1) {
@@ -277,50 +308,93 @@
   </section>
 
   <!-- Supported by sections -->
-<section id="support">
-  <div class="container">
-    <br>
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h6>collaboration and support from</h6>
-        <hr class="star-primary">
-      </div>
-      <div class="col-md-4 support-icon">
-        <a href="https://www.usaid.gov/"><img src="img/support/USAID-logo.png" alt="" class="support-image"></a>
-      </div>
-      <div class="col-md-4 support-icon">
-        <a href="http://www.pdc.org/"><img src="img/support/pdc_logo.png" alt="" class="support-image"></a>
-      </div>
-      <div class="col-md-4 support-icon">
-        <a href="https://tatacenter.mit.edu/"><img src="img/support/tatacenter_logo.png" alt="" class="support-image"></a>
-      </div>
-      <div class="col-md-4 support-icon">
-        <a href="http://www.broward.org/Pages/Welcome.aspx"><img src="img/support/Broward_logo.png" alt="" class="support-image"></a>
-      </div>
-      <div class="col-md-4 support-icon">
-        <a href="https://bpbd.jakarta.go.id/"><img src="img/support/bnpb_logo.png" alt="" class="support-image"></a>
-      </div>
-      <div class="col-md-4 support-icon">
-        <a href="https://www.hotosm.org/"><img src="img/support/Hot_logo.png" alt="" class="support-image"></a>
+  <section id="support">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h6>collaboration and support from</h6>
+          <hr class="star-primary">
+        </div>
+        <div class="col-md-3 support-icon">
+          <a href="https://line.me/en/"><img src="img/support/line.png" alt="" class="support-image"></a>
+        </div>
+        <div class="col-md-3 support-icon">
+          <a href="https://www.usaid.gov/"><img src="img/support/USAID-logo.png" alt="" class="support-image"></a>
+        </div>
+        <div class="col-md-3 support-icon">
+          <a href="http://www.pdc.org/"><img src="img/support/pdc_logo.png" alt="" class="support-image"></a>
+        </div>
+        <div class="col-md-3 support-icon">
+          <a href="https://tatacenter.mit.edu/"><img src="img/support/tatacenter_logo.png" alt="" class="support-image"></a>
+        </div>
+        <div class="col-md-4 support-icon">
+          <a href="http://www.broward.org/Pages/Welcome.aspx"><img src="img/support/Broward_logo.png" alt="" class="support-image"></a>
+        </div>
+        <div class="col-md-4 support-icon">
+          <a href="https://bpbd.jakarta.go.id/"><img src="img/support/bnpb_logo.png" alt="" class="support-image"></a>
+        </div>
+        <div class="col-md-4 support-icon">
+          <a href="https://www.hotosm.org/"><img src="img/support/Hot_logo.png" alt="" class="support-image"></a>
+        </div>
       </div>
     </div>
-    <hr class="star-primary">
-  </div>
-</div>
-</section>
+    </div>
+  </section>
+
+  <!-- media section
+  <section id="support">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h6>Featured in</h6>
+          <hr class="star-primary">
+        </div>
+        <div class="col-md-4 media-icon">
+          <a href="https://www.theverge.com/2017/9/9/16280250/mit-urban-risk-lab-riskmap-hurricane-irma-real-time-crowdsource-flood-reporting"><img src="img/media/verge.png" alt="" class="media-image"></a>
+        </div>
+        <div class="col-md-4 media-icon">
+          <a href="https://www.cnnindonesia.com/teknologi/20190305082813-185-374546/pantau-titik-banjir-di-jakarta-lewat-peta-bencana"><img src="img/media/cnnIndo.png" alt="" class="media-image"></a>
+        </div>
+        <div class="col-md-4 media-icon">
+          <a href="https://www.engadget.com/2017/09/09/mit-riskmap-crowdsource-flooding-hurricane-irma/"><img src="img/media/engadget.png" alt="" class="media-image"></a>
+        </div>
+        <div class="col-md-4 media-icon">
+          <a href="https://www.theverge.com/2017/9/9/16280250/mit-urban-risk-lab-riskmap-hurricane-irma-real-time-crowdsource-flood-reporting"><img src="img/media/washington-post.png" alt="" class="media-image"></a>
+        </div>
+        <div class="col-md-4 media-icon">
+          <a href="https://www.thehindu.com/news/cities/chennai/mit-initiative-on-flood-reporting/article19965959.ece"><img src="img/media/the-hindu.jpg" alt="" class="media-image"></a>
+        </div>
+        <div class="col-md-4 media-icon">
+          <a href="https://www.hotosm.org/"><img src="img/media/TOI.png" alt="" class="media-image"></a>
+        </div>
+        <div class="col-md-12 media-icon">
+          <a href="http://www.broward.org/Pages/Welcome.aspx"><img src="img/media/OECD_logo.png" alt="" class="media-image"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+-->
+
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
     <a class="btn btn-primary" href="#page-top">
-                <i class="fa fa-chevron-up"></i>
-              </a>
+      <i class="fa fa-chevron-up"></i>
+    </a>
   </div>
 
   <div id="google_translate_element"></div>
   <script type="text/javascript">
-    function googleTranslateElementInit()
-    {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-77075547-1'}, 'google_translate_element');
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,
+        gaTrack: true,
+        gaId: 'UA-77075547-1'
+      }, 'google_translate_element');
     }
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -328,20 +402,19 @@
 </body>
 
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-  <!-- Theme JavaScript -->
-  <script src="js/freelancer.min.js"></script>
+<!-- Theme JavaScript -->
+<script src="js/freelancer.min.js"></script>
 
-  <!-- Theme CSS -->
-  <link href="css/freelancer.css" rel="stylesheet">
+<!-- Theme CSS -->
+<link href="css/freelancer.css" rel="stylesheet">
 
 </html>
