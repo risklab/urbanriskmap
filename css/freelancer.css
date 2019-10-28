@@ -4,7 +4,7 @@
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 */
 body {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
   overflow-x: hidden;
 }
 p {
@@ -29,7 +29,7 @@ a.active {
   color: #000000;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -85,7 +85,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   max-width: 500px;
@@ -93,9 +93,9 @@ header .intro-text .name {
 
 
 .header_text {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.01em;
   max-width: 400px !important;
   padding-top: 100px;
@@ -109,12 +109,12 @@ header .intro-text .name {
   }
   header .intro-text .name {
     font-size: 48px;
-    font-weight: 100;
+    font-weight: 400;
     max-width: 500px;
   }
   header .intro-text .Meta_text {
     font-size: 26px;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 0.05em;
     max-width: 500px;
 
@@ -130,8 +130,8 @@ header .intro-text .name {
 
 .navbar-custom {
   background: #31aade;
-  font-family: "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-weight: 400;
   border: none;
   -webkit-box-shadow: 0px 9px 68px -16px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 9px 68px -16px rgba(0,0,0,0.3);
@@ -253,8 +253,8 @@ section.success {
 }
 
 .navbar-brand {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-weight: 400;
 }
 
 .aboutText {
