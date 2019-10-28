@@ -94,10 +94,10 @@ header .intro-text .name {
 
 .header_text {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 100;
   letter-spacing: 0.01em;
-  max-width: 600px;
+  max-width: 400px !important;
   padding-top: 100px;
   padding-bottom: 20px;
 }
@@ -139,6 +139,7 @@ header .intro-text .name {
 }
 .navbar-custom .navbar-brand {
   color: white;
+  padding: 3px;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
