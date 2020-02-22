@@ -11,7 +11,7 @@ p {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .col-sm-8 a{
@@ -35,27 +35,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 22px;
 }
 
 h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
   font-size: 20px;
 }
 
-h5 {
+h3 {
   font-size: 18px;
 }
 
-h6 {
+h4 {
   font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
 }
 
 .img-centered {
