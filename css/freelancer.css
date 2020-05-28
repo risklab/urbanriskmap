@@ -495,3 +495,10 @@ fieldset[disabled] .btn-success.active {
   margin: auto;
   padding: 10px;
 }
+
+#footer {
+  bottom: 0;
+  height: 50px;
+  padding: 10px; 
+  text-align: center;
+}
